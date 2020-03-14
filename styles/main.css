@@ -5,9 +5,8 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-html {
+body {
   width: 100vw;
-  overflow: hidden;
 }
 
 h1,
@@ -17,31 +16,33 @@ p {
 }
 h1 {
   font-size: 21.25vw;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 89.9%;
-  margin-bottom: 65vw;
-}
-.cover p {
-  font-size: 4.928vw;
-  font-weight: 300;
-  margin-bottom: 4.6875vw;
-}
-.cover .cover_bttm-text p {
-  font-size: 8.125vw;
-  font-weight: 500;
-  margin-bottom: 1vw;
-}
-.cover .cover_bttm-text p:nth-of-type(3) {
-  font-size: 8.125vw;
-  font-weight: 500;
-  margin-bottom: 0vw;
 }
 .cover {
   width: 100vw;
   padding: 9.375vw 10vw 10.9375vw;
-  height: 177.5vw;
+  height: 100vh;
   background: #00FF38;
   border: 1.5625vw solid #9C00FF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start ;
+  justify-content: space-between;
+}
+.cover__top p {
+  font-size: 4.928vw;
+  font-weight: 300;
+}
+.cover__bottom p {
+  font-size: 8.125vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+.cover__bottom p:nth-of-type(3) {
+  font-size: 8.125vw;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 img {
@@ -69,6 +70,15 @@ img {
   height: 410.5vw;
   top: 3vw;
   left: 5.25vw;
+  stroke: rgb(0,0,0);
+  stroke-width: 6;
+}
+
+.map {
+  background: url(../images/bg-map.svg) 557.5vw 297vw;
+  background-position: top left;
+  width: 100vw;
+  height: 382.8125vw;
 }
 
 
