@@ -84,6 +84,10 @@ svg {
   height: 375vw;
   border: 1.6vw solid #00FF38;
 }
+.map__frame svg {
+  width: 15%;
+  height: auto;
+}
 
 
 @media (min-width: 768px){
