@@ -85,10 +85,23 @@ svg {
   border: 1.6vw solid #00FF38;
 }
 .map__frame svg {
-  width: 15%;
+  width: 17%;
   height: auto;
 }
+.map__frame svg path{
+  stroke-width: 5.5;
+}
+.map__frame .enter {
+  left: 11vw;
+  top: 36vw;
+}
+.map__frame .medicine {
+  left: 23.4vw;
+}
 
+.map__frame .way {
+  width: 10%;
+}
 
 @media (min-width: 768px){
 
