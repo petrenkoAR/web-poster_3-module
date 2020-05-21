@@ -26,12 +26,14 @@ h1 {
   width: 100vw;
   padding: 9vw 10vw 10.9375vw;
   height: 100vh;
+  max-height: 200vw;
+  min-height: 130vw;
   background: #00FF38;
   border: 1.5625vw solid #9C00FF;
   display: flex;
   flex-direction: column;
   align-items: flex-start ;
-  justify-content: space-between;s
+  justify-content: space-between;
 }
 .cover__top p {
   font-size: 4.928vw;
@@ -51,7 +53,7 @@ h1 {
   position: absolute;
   width: 54%;
   height: auto;
-  margin: 68vw 54vw;
+  margin: 71vw 54vw;
 }
 .cover .big-sound {
   position: absolute;
@@ -69,6 +71,7 @@ h1 {
 
 .map {
   background: #9C00FF;
+  overflow: hidden;
   width: 100vw;
   height: 400vw;
   display: flex;
@@ -88,21 +91,74 @@ svg {
   width: 17%;
   height: auto;
 }
-.map__frame svg path{
-  stroke-width: 5.5;
+.map__frame svg path,
+.map__frame svg circle{
+  stroke-width: 6;
 }
 .map__frame .enter {
   left: 11vw;
   top: 36vw;
 }
 .map__frame .medicine {
-  left: 23.4vw;
+  left: 23.5vw;
+  top: 61vw;
+}
+.map__frame .kpop {
+  top: 98.6vw;
+  left: 48.55vw;
+}
+.map__frame .ear {
+  top: 111vw;
+  left: 23.5vw;
+}
+.map__frame .info {
+  top: 136vw;
+  left: 48.5vw;
+}
+.map__frame .food {
+  top: 186vw;
+  left: 48.5vw;
+}
+.map__frame .lips {
+  top: 148.5vw;
+  left: 5vw;
+}
+.map__frame .rap {
+  top: 211vw;
+  left: 11vw;
+}
+.map__frame .cafe {
+  top: 236vw;
+  left: 36vw;
+}
+.map__frame .pop {
+  top: 273.5vw;
+  left: 54.5vw;
+}
+.map__frame .rock {
+  top: 286vw;
+  left: 23.5vw;
+}
+.map__frame .tickets {
+  top: 298.5vw;
+  left: 48.5vw;
+}
+.map__frame .mouth {
+  top: 336vw;
+  left: 11vw;
+}
+.map__frame .wc {
+  top: 348.5vw;
+  left: 55vw;
 }
 
-.map__frame .way {
-  width: 10%;
+.map .mobile-way {
+  left: 5vw;
+  top: 123vw;
+  width: 95%;
+  height: auto;
+  max-height: 200vh; 
 }
-
 @media (min-width: 768px){
 
 }
